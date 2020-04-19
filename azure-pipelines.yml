@@ -15,7 +15,7 @@ steps:
     azureSubscription: 'devops-auto-iot-conn'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az group delete --name rg-iot-dev'
+    inlineScript: 'az group delete --name rg-iot-dev --yes'
 
 - script: echo Hello, world!
   displayName: 'displaying hello world'
